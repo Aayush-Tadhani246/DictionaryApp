@@ -82,7 +82,7 @@ export default class HomeScreen extends Component{
                 Type:{""}
               </Text>
               <Text style={{fontSize:18}}>
-                {this.state.lexicalCatergory}
+                {this.state.lexicalCategory}
                 </Text>
             </View>
             
