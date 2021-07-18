@@ -4,7 +4,18 @@ import { StyleSheet, Text, View, TextInput,TouchableOpacity } from 'react-native
 import { Header } from 'react-native-elements';
 import {SafeAreaProvider} from 'react-native-safe-area-context'
 
+
 export default class HomeScreen extends Component{
+  constructor(){
+    super()
+    this.state={
+      word:' ', 
+      definition:' ', 
+      lexicalCategory:' ',
+      text:'',
+      displayText:''
+    }
+  }
     getWord = (word)=> {
     var searchKeyword=word.toLowerCase();
 
