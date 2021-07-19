@@ -39,7 +39,7 @@ export default class HomeScreen extends Component{
         var lexicalCategory = wordData.wordtype
         this.setState({
           "word": this.state.text,
-          "definiton":definition,
+          "definition":definition,
           "lexicalCategory" : lexicalCategory
         })
       }
@@ -51,13 +51,7 @@ export default class HomeScreen extends Component{
       }
     })
   }
-    constructor(){
-        super();
-        this.state={
-            text:'',
-            displayText:''
-          }
-    }
+    
     render(){
         return(
           <SafeAreaProvider>
